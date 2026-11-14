@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korotoumou KEITA | Portfolio BTS SIO SLAM</title>
+  <meta name="description" content="Portfolio de Korotoumou KEITA, BTS SIO option SLAM : réalisations, stages, veille technologique et tableau de synthèse.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU (style terminal) -->
+  <header class="nav">
+    <a class="logo" href="#accueil">&gt;_ k.keita</a>
+    <nav>
+      <a href="#apropos">~/a-propos</a>
+      <a href="#parcours">~/parcours</a>
+      <a href="#competences">~/competences</a>
+      <a href="#realisations">~/realisations</a>
+      <a href="#stages">~/stages</a>
+      <a href="#veille">~/veille</a>
+      <a href="#synthese">~/synthese</a>
+      <a href="#documents">~/documents</a>
+      <a href="#contact">~/contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1. ACCUEIL : faux terminal animé par script.js -->
+    <section id="accueil" class="hero">
+      <div class="hero-top"><div class="terminal">
+        <div class="bar"><i></i><i></i><i></i><span>korotoumou@portfolio:~</span></div>
+        <div class="body" id="term">
+          <p class="line"><b>$</b> whoami</p>
+          <p class="line out big">Korotoumou KEITA</p>
+          <p class="line"><b>$</b> cat formation.txt</p>
+          <p class="line out">BTS SIO · option SLAM (Solutions Logicielles et Applications Métiers)</p>
+          <p class="line"><b>$</b> status</p>
+          <p class="line out ok">● Recherche un stage de 5 semaines (début vers mi-novembre)</p>
+        </div>
+      </div>
+      <!-- PHOTO : remplace l'emoji par <img src="photo.jpg" alt="Photo de Korotoumou KEITA"> -->
+      <div class="photo">🧑‍💻</div>
+      </div>
+      <div class="cta">
+        <a class="btn" href="#realisations">Voir mes réalisations</a>
+        <a class="btn ghost" href="#contact">Me contacter</a>
+      </div>
+    </section>
+
+    <!-- 2. À PROPOS -->
+    <section id="apropos">
+      <h2>À propos</h2>
+      <p>Je prépare un BTS SIO option SLAM : je me forme à la conception, au développement et à la maintenance d'applications. J'ai réalisé un stage en support informatique, un stage de conception d'un outil de gestion interne pour une ONG, et plusieurs projets en équipe.</p>
+      <p><strong>Objectif :</strong> après le BTS, poursuivre vers l'intelligence artificielle avec un mastère. Je cherche actuellement un <strong>stage de 5 semaines</strong>, à démarrer vers mi-novembre.</p>
+    </section>
+
+    <!-- 3. PARCOURS -->
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <div class="grid">
+        <div class="card"><span class="tag">Depuis 2025</span><h3>BTS SIO option SLAM</h3>
+          <p>Paris School of Technology and Management (PSTM), Paris. Développement d'applications, bases de données, conception UML, gestion de projet en groupe.</p></div>
+        <div class="card"><span class="tag">2024 – 2025</span><h3>Licence 1 Réseaux et télécommunications</h3>
+          <p>ESGIC, Bamako. Bases en réseaux, protocoles, sécurité, programmation (Python, C, SQL) et systèmes Linux / Windows.</p></div>
+        <div class="card"><span class="tag">2023 – 2024</span><h3>Baccalauréat sciences expérimentales</h3>
+          <p>Obtenu avant la licence.</p></div>
+        <div class="card"><span class="tag">19 oct. 2026</span><h3>Introduction à la cybersécurité</h3>
+          <p>Certificat Cisco Networking Academy. <a href="documents/certificat-cisco-cybersecurite.pdf" target="_blank">Voir le certificat →</a></p></div>
+      </div>
+    </section>
+
+    <!-- 4. COMPÉTENCES -->
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="grid">
+        <div class="card"><h3>Langages</h3>
+          <p class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>SQL</span><span>Python</span><span>Java</span><span>C#</span><span>C++</span></p>
+          <small>Niveau : notions, en progression.</small></div>
+        <div class="card"><h3>Outils (liste évolutive)</h3>
+          <p class="chips" id="outils"></p>
+          <small>Liste modifiable dans script.js.</small></div>
+        <div class="card"><h3>Réseaux &amp; systèmes</h3>
+          <p class="chips"><span>Cisco (routeurs, switches)</span><span>TCP/IP</span><span>DHCP</span><span>DNS</span><span>Linux</span><span>Windows</span><span>VMware</span></p></div>
+        <div class="card"><h3>Langues</h3>
+          <p class="chips"><span>Français : courant</span><span>Anglais : intermédiaire</span><span>Bambara : langue natale</span></p></div>
+        <div class="card"><h3>Données</h3>
+          <p class="chips"><span>MySQL</span><span>Modélisation relationnelle</span><span>Airtable</span></p></div>
+        <div class="card"><h3>Savoir-être</h3>
+          <p class="chips"><span>Travail en équipe</span><span>Rédaction de documentation</span><span>Rigueur (tests)</span><span>Autonomie</span></p></div>
+      </div>
+    </section>
+
+    <!-- 5. RÉALISATIONS : une fiche par projet, toutes sur le même modèle -->
+    <section id="realisations">
+      <h2>Réalisations</h2>
+      <div class="grid">
+        <article class="card"><span class="tag">Projet de groupe</span><h3>Site d'e-enseignement</h3>
+          <p><b>Contexte :</b> site portfolio réalisé à trois pour présenter le groupe, ses CV, ses stages, l'école et des cours avec exercices corrigés.</p>
+          <p><b>Pages :</b> Accueil, Groupe (compétences en barres de progression), Entreprises, École, Cours (6 chapitres), Contact.</p>
+          <p><b>Mon rôle :</b> veille technologique, diagramme de Gantt, présentation orale de 20 min.</p>
+          <p><b>Outils :</b> HTML, CSS, JavaScript, Figma (maquette), Trello, GitHub, hébergement IONOS.</p>
+          <p><b>Difficultés surmontées :</b> création de branches Git, répartition des tâches sur Trello, mise en page sur Figma.</p>
+          <a href="https://6ac7b4b905635e0007b5bfc7--funny-biscochitos-5fdf74.netlify.app/" target="_blank" rel="noopener">Voir le site →</a></article>
+
+        <article class="card"><span class="tag">Projet de groupe</span><h3>Jeu d'échecs</h3>
+          <p><b>Contexte :</b> réaliser un jeu complet, de l'analyse à la présentation finale (15 jours).</p>
+          <p><b>Mon rôle :</b> rédaction du cahier des charges avec l'équipe : périmètre, besoins fonctionnels, risques, livrables.</p>
+          <p><b>Technologies :</b> JavaScript, HTML5, CSS, GitHub, Trello.</p>
+          <p><b>Objectif :</b> partie à deux joueurs avec échec, échec et mat, roque, prise en passant et promotion.</p>
+          <a href="https://github.com/korotoumou26" target="_blank" rel="noopener">Voir sur GitHub →</a></article>
+
+        
+
+        <article class="card"><span class="tag">Projet de conception</span><h3>Neige et Soleil</h3>
+          <p><b>Contexte :</b> plateforme de location de gîtes avec trois rôles : client, propriétaire, administrateur.</p>
+          <p><b>Travail réalisé :</b> cahier des charges (fonctionnalités par rôle, paiement Stripe, contrats PDF, planning en 4 étapes, sécurité) et vérificateur de force de mot de passe en C# (application console).</p>
+          <p><b>Résultat :</b> [à compléter : maquettes, capture du vérificateur].</p>
+          <a href="https://github.com/korotoumou26" target="_blank" rel="noopener">Voir sur GitHub →</a></article>
+      </div>
+    </section>
+
+    <!-- 6. STAGES -->
+    <section id="stages">
+      <h2>Stages</h2>
+      <div class="grid">
+        <article class="card"><span class="tag">Mai – juin 2026</span><h3>Kanis Informatique</h3>
+          <p><b>Poste :</b> Assistant Support Client &amp; Service Logistique.</p>
+          <ul>
+            <li>Accueil et prise en charge des demandes d'intervention</li>
+            <li>Gestion administrative : devis, facturation, suivi des paiements</li>
+            <li>Support et maintenance logicielle : diagnostic de premier niveau, installation, configuration, mises à jour</li>
+            <li>Logistique : expéditions et retours de matériel (Chronopost)</li>
+          </ul></article>
+
+        <article class="card"><span class="tag">Fin juin – août 2026</span><h3>UAEFI (ONG)</h3>
+          <p><b>Projet :</b> conception d'un outil de gestion interne centralisé et multilingue (FR / EN / PT) pour une cinquantaine d'experts. L'ancien espace Notion n'était pas adopté : trop complexe pour les utilisateurs.</p>
+          <ul>
+            <li>Rédaction du cahier des charges fonctionnel (V2, avec les retours de la direction)</li>
+            <li>Benchmark de 3 solutions (Airtable, Airtable + Softr/Glide, Monday.com) et recommandation argumentée</li>
+            <li>Prototype sur Airtable : base des experts et pipeline de projets en vue Kanban</li>
+            <li>Manuels d'utilisation pour rendre l'équipe autonome</li>
+            <li>Missions de l'attestation : gestion des stocks et de base de données, facturation, création de réseaux locaux, partage de périphériques, configuration et installation de logiciels</li>
+          </ul></article>
+
+        <article class="card"><span class="tag">En recherche</span><h3>Stage de 2e année</h3>
+          <p>Stage de 5 semaines à démarrer vers mi-novembre, idéalement en développement, données ou IA.</p></article>
+      </div>
+    </section>
+
+    <!-- 7. VEILLE TECHNOLOGIQUE -->
+    <section id="veille">
+      <h2>Veille technologique</h2>
+      <div class="card">
+        <span class="tag">Sujet</span>
+        <h3>Souveraineté numérique et indépendance technologique</h3>
+        <p><b>Problématique :</b> comment les organisations européennes peuvent-elles réduire leur dépendance aux grands acteurs étrangers du cloud et de l'IA ?</p>
+        <p><b>Pourquoi ce sujet :</b> il touche à l'hébergement, aux données et à l'IA, domaine vers lequel je veux m'orienter. Je l'ai aussi rencontré en stage, en comparant des outils en ligne pour une ONG.</p>
+        <p><b>Sources :</b></p>
+        <ul>
+          <li>Institutions : ANSSI (qualification SecNumCloud), CNIL, Commission européenne (AI Act, Data Act)</li>
+          <li>Presse spécialisée : Next (next.ink), LeMagIT, Le Monde Informatique, Numerama</li>
+          <li>Acteurs : blogs d'OVHcloud, Scaleway et Mistral AI</li>
+        </ul>
+        <p><b>Outils :</b> flux RSS regroupés dans Feedly ; Google Alerts sur « souveraineté numérique », « cloud souverain », « SecNumCloud », « AI Act ».</p>
+        <p><b>Méthode :</b> environ 30 minutes par semaine ; pour chaque article, une fiche (date, source, résumé, intérêt pour mon métier).</p>
+        <div class="scroll"><table>
+          <tr><th>Date</th><th>Source</th><th>Résumé</th><th>Intérêt</th></tr>
+          <tr><td>[date]</td><td>[source]</td><td>[2 à 3 lignes]</td><td>[lien avec SLAM]</td></tr>
+          <tr><td>[date]</td><td>[source]</td><td>[2 à 3 lignes]</td><td>[lien avec SLAM]</td></tr>
+          <tr><td>[date]</td><td>[source]</td><td>[2 à 3 lignes]</td><td>[lien avec SLAM]</td></tr>
+        </table></div>
+      </div>
+    </section>
+
+    <!-- 8. TABLEAU DE SYNTHÈSE : à valider avec ton professeur -->
+    <section id="synthese">
+      <h2>Tableau de synthèse</h2>
+      <div class="scroll">
+        <table>
+          <tr><th>Activité</th><th>Bloc 1 · Support et services</th><th>Bloc 2 · Conception et développement</th><th>Bloc 3 · Cybersécurité</th></tr>
+          <tr><td>Stage Kanis Informatique</td><td>✔</td><td></td><td></td></tr>
+          <tr><td>Stage UAEFI</td><td>✔</td><td>✔</td><td></td></tr>
+          <tr><td>Site d'e-enseignement</td><td></td><td>✔</td><td></td></tr>
+          <tr><td>Jeu d'échecs</td><td></td><td>✔</td><td></td></tr>
+          <tr><td>Neige et Soleil</td><td></td><td>✔</td><td>✔</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- 9. DOCUMENTS : mets tes PDF dans un dossier "documents" -->
+    <section id="documents">
+      <h2>Documents</h2>
+      <div class="grid">
+        <a class="card doc" href="documents/CV.pdf" target="_blank">📄 CV</a>
+        <a class="card doc" href="documents/attestation-kanis.pdf" target="_blank">📄 Attestation de stage Kanis</a>
+        <a class="card doc" href="documents/attestation-uaefi.pdf" target="_blank">📄 Attestation de stage UAEFI</a>
+        <a class="card doc" href="documents/cahier-des-charges-uaefi.pdf" target="_blank">📄 Cahier des charges UAEFI</a>
+        <a class="card doc" href="documents/benchmark-uaefi.pdf" target="_blank">📄 Benchmark et recommandations UAEFI</a>
+        <a class="card doc" href="documents/cahier-des-charges-echecs.pdf" target="_blank">📄 Cahier des charges Jeu d'échecs</a>
+        <a class="card doc" href="documents/cahier-des-charges-neige-et-soleil.pdf" target="_blank">📄 Cahier des charges Neige et Soleil</a>
+        <a class="card doc" href="documents/certificat-cisco-cybersecurite.pdf" target="_blank">📄 Certificat Cisco cybersécurité</a>
+      </div>
+    </section>
+
+    <!-- 10. CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card contact">
+        <p>✉ <a href="mailto:kotykeita@icloud.com">kotykeita@icloud.com</a></p>
+        <p>☎ <a href="tel:+33699210922">06 99 21 09 22</a></p>
+        <p>in <a href="https://fr.linkedin.com/in/korotoumou-keita-850203381" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p>&lt;/&gt; <a href="https://github.com/korotoumou26" target="_blank" rel="noopener">GitHub (korotoumou26)</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>© <span id="annee"></span> Korotoumou KEITA · BTS SIO SLAM</footer>
+  <script src="script.js"></script>
+</body>
+</html>
